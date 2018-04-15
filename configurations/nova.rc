@@ -1,5 +1,9 @@
 # https://docs.openstack.org/charm-deployment-guide/latest/config-openstack.html
-export OS_AUTH_URL=http://10.251.30.196:5000/v2.0/
+export OS_AUTH_URL=http://10.251.30.196:35357/v3/
 export OS_USERNAME=admin
 export OS_PASSWORD=openstack
-export OS_TENANT_NAME=admin
+export OS_USER_DOMAIN_NAME=admin_domain
+export OS_PROJECT_NAME=admin
+export OS_PROJECT_DOMAIN_NAME=admin_domain
+
+export OS_IDENTITY_API_VERSION=3
